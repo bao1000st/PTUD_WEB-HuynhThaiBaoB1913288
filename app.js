@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
     res.json({ message: "Wellcome to contact book application." });
 });
 
-// app.use("/api/contacts", contactRouter);
+app.use("/api/contacts", contactRouter);
 
 // // handle 404 response
 // app.use((req, res, next) => {
