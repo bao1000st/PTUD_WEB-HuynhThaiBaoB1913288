@@ -28,5 +28,5 @@ app.listen(PORT, () => {
 //     }
 // }
 
-// startServer();
+startServer();
 
