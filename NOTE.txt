@@ -1,0 +1,19 @@
+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
+
+sudo mongod --dbpath ~/data/db
+
+curl http://127.0.0.1:3000/api/contacts
+
+curl --header "Content-Type: application/json" --request POST --data '{"name":"xyz","email":"xyz@gmail.com"}' http://127.0.0.1:3000/api/contacts
+
+curl http://127.0.0.1:3000/api/contacts/631dca55d66bf6f8eaa4bfc9
+
+curl --header "Content-Type: application/json" --request PUT --data '{"name":"baos","email":"balbabla@gmail.com"}' http://127.0.0.1:3000/api/contacts/631dca55d66bf6f8eaa4bfc9
+
+curl --request DELETE http://127.0.0.1:3000/api/contacts/631dca55d66bf6f8eaa4bfc9
+
+curl http://127.0.0.1:3000/api/contacts/favorite
+
+curl --header "Content-Type: application/json" --request POST --data '{"name":"xyz","email":"xyz@gmail.com","favorite":true}' http://127.0.0.1:3000/api/contacts
+
+curl --request DELETE http://127.0.0.1:3000/api/contacts
